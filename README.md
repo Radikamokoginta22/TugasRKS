@@ -3,4 +3,5 @@ Sistem Informasi Akademik adalah suatu sistem yang dirancang untuk keperluan pen
 
 Berikut adalah vidio tampilannya :
 
-![tampilan KHS](https://user-images.githubusercontent.com/76817478/105659257-e57de480-5efa-11eb-9b51-3a54ab4c2015.GIF)
+https://user-images.githubusercontent.com/76817478/105659750-2296a680-5efc-11eb-95a2-c9326c3a443f.Mp4
+
