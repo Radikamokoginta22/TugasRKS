@@ -66,23 +66,6 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Informasi Perkuliahan:</h6>
-                        <a class="collapse-item" href="buttons.html">Jadwal</a>
-                        <a class="collapse-item" href="cards.html">KRS</a>
-                        <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
-                    </div>
-                </div>
-            </li>
-
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Perkuliahan</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Informasi Perkuliahan:</h6>
                         <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">KRS</a>
@@ -104,6 +87,21 @@
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Daftar Mahasiswa</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Surat Izin</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Lainnya</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Kelulusan</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Wisuda</a>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Pendadaran TA</a>
                     </div>
                 </div>
             </li>
@@ -328,12 +326,12 @@
 
 
                         </div>
+                        <div>
+                            Keterangan:
 
-                        Keterangan:
-
-
-                        <p>-</p>
-                        <p>-</p>
+                        </div>
+                        <p class="text-danger">-Seluruh data yang ditampilkan adalah matakuliah yang diambil oleh mahasiswa.</p>
+                        <p class="text-danger">-Jika terdapat nilai yang belum keluar harap konfirmasi ke dosen yang mengampuh mata kuliah tersebut.</p>
 
 
                         <li class="nav-item">
@@ -349,7 +347,104 @@
                                 </div>
                             </div>
                         </li>
+                        <div class="col-xl-4 col-lg-4">
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Data Mahasiswa</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <h4 class="text-primary">Nama : Molly</h4>
+                                    <h4 class="text-primary">NIM : 72634276423</h4>
+                                    <h4 class="text-primary">Prodi : Teknik Informatika</h4>
+                                    <button class="btn-success">Print KHS</button>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Kode Mata Kuliah</th>
+                                            <th>Mata Kuliah</th>
+                                            <th>SKS</th>
+                                            <th>SMT</th>
+                                            <th>Bobot</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>092183</td>
+                                            <td>Tugas Akhir</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>73282</td>
+                                            <td>Sistem Basis Data Lanjut</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>C</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>001</td>
+                                            <td>Pemrograman Web Praktik</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>7458345</td>
+                                            <td>Sistem Operasi</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>2834724</td>
+                                            <td>Algoritma</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td>B</td>
+                                        </tr>
+
+
+
+                                    </tbody>
+
+                                </table>
+                                <div class="col-xl-4 col-lg-4">
+                                    <!-- Illustrations -->
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h6 class="m-0 font-weight-bold text-primary">Informasi Penting</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
+                                            </div>
+                                            <h4 class="text-primary">Jumlah SKS yang diambil : 24</h4>
+                                            <h4 class="text-primary">Jumlah Mata Kuliah yang diambil : 7</h4>
+                                            <h4 class="text-primary">IP Semester : 4.0</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>

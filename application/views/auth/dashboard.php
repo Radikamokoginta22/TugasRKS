@@ -9,17 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
+    <title>Dashboard</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="<?= base_url('assets/'); ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -66,23 +63,6 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Informasi Perkuliahan:</h6>
-                        <a class="collapse-item" href="buttons.html">Jadwal</a>
-                        <a class="collapse-item" href="cards.html">KRS</a>
-                        <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
-                    </div>
-                </div>
-            </li>
-
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Perkuliahan</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Informasi Perkuliahan:</h6>
                         <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">KRS</a>
@@ -108,6 +88,35 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Kelulusan</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Wisuda</a>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Pendadaran TA</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+
+
+            <!-- Nav Item - Charts -->
+
+
+            <!-- Nav Item - Tables -->
+
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -115,6 +124,9 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
+            <!-- Sidebar Message -->
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -125,7 +137,6 @@
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar -->
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
@@ -317,41 +328,120 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Dashboard/Perkuliahan/KHS</h1>
-
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-
-                            <i class="fas fa-clipboard-list fa-2x text-primary">Kartu Hasil Study</i>
-
-
-                        </div>
-
-                        Keterangan:
-
-
-                        <p>-</p>
-                        <p>-</p>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#semester" aria-expanded="true" aria-controls="semester">
-                                <i class="fas fa-fw fa-cog"></i>
-                                <span>Pilih Semester :</span>
-                            </a>
-                            <div id="semester" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                <div class="bg-white py-2 collapse-inner rounded">
-                                    <a class="collapse-item" href="<?= base_url('auth/semester1'); ?>">Semester 1</a>
-                                    <a class="collapse-item" href="<?= base_url('auth/semester2'); ?>">Semester 2</a>
-                                    <a class="collapse-item" href="<?= base_url('auth/semester3'); ?>">Semester 3</a>
-                                </div>
-                            </div>
-                        </li>
-
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Status Mahasiswa</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Mahasiswa Aktif</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                IPK(Indeks Prestasi Kumulatif)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">4.0</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-fw fa-tachometer-alt fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">SKS(Satuan kredit semester)
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50 sks</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Tagihan Pembayaran</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">Rp. 1000000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl col-lg">
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Informasi Penting</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="">
+                                    </div>
+                                    <p> Sistem Informasi Akademik adalah suatu sistem yang dirancang untuk keperluan pengeloaan data-data akademik dengan penerapan teknologi komputer baik hardware maupun software sehingga seluruh proses kegiatan akademik dapat terkelola menjadi informasi yang bermanfaat dalam pengelolaan manajemen perguruan tinggi
+                                        dan pengambilan keputusan-keputusan bagi pengambil keputusan atau top manajemen di lingkungan perguruan tinggi.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -409,11 +499,11 @@
     <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="<?= base_url('assets/'); ?>vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url('assets/'); ?>vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="<?= base_url('assets/'); ?>js/demo/datatables-demo.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/demo/chart-area-demo.js"></script>
+    <script src="<?= base_url('assets/'); ?>js/demo/chart-pie-demo.js"></script>
 
 </body>
 

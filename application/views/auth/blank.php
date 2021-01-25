@@ -9,17 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
+    <title>Dashboard</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this page -->
-    <link href="<?= base_url('assets/'); ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -66,23 +63,6 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Informasi Perkuliahan:</h6>
-                        <a class="collapse-item" href="buttons.html">Jadwal</a>
-                        <a class="collapse-item" href="cards.html">KRS</a>
-                        <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
-                    </div>
-                </div>
-            </li>
-
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Perkuliahan</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Informasi Perkuliahan:</h6>
                         <a class="collapse-item" href="<?= base_url('auth/khs'); ?>">KHS</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal</a>
                         <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">KRS</a>
@@ -108,6 +88,35 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Kelulusan</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Wisuda</a>
+                        <a class="collapse-item" href="<?= base_url('auth/blank'); ?>">Jadwal Pendadaran TA</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+
+
+            <!-- Nav Item - Charts -->
+
+
+            <!-- Nav Item - Tables -->
+
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -115,6 +124,9 @@
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
+
+            <!-- Sidebar Message -->
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -125,7 +137,6 @@
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar -->
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
@@ -316,40 +327,12 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Dashboard/Perkuliahan/KHS</h1>
-
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-
-                            <i class="fas fa-clipboard-list fa-2x text-primary">Kartu Hasil Study</i>
-
-
-                        </div>
-
-                        Keterangan:
-
-
-                        <p>-</p>
-                        <p>-</p>
-
-
-                        <li class="nav-item">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#semester" aria-expanded="true" aria-controls="semester">
-                                <i class="fas fa-fw fa-cog"></i>
-                                <span>Pilih Semester :</span>
-                            </a>
-                            <div id="semester" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                <div class="bg-white py-2 collapse-inner rounded">
-                                    <a class="collapse-item" href="<?= base_url('auth/semester1'); ?>">Semester 1</a>
-                                    <a class="collapse-item" href="<?= base_url('auth/semester2'); ?>">Semester 2</a>
-                                    <a class="collapse-item" href="<?= base_url('auth/semester3'); ?>">Semester 3</a>
-                                </div>
-                            </div>
-                        </li>
-
+                    <!-- 404 Error Text -->
+                    <div class="text-center">
+                        <div class="error mx-auto" data-text="404">404</div>
+                        <p class="lead text-gray-800 mb-5">Page Not Found</p>
+                        <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
+                        <a href="index.html">&larr; Back to Dashboard</a>
                     </div>
 
                 </div>
@@ -398,6 +381,7 @@
         </div>
     </div>
 
+
     <!-- Bootstrap core JavaScript-->
     <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
     <script src="<?= base_url('assets/'); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -407,13 +391,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="<?= base_url('assets/'); ?>vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="<?= base_url('assets/'); ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="<?= base_url('assets/'); ?>js/demo/datatables-demo.js"></script>
 
 </body>
 
